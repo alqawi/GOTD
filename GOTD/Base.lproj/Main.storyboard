@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gmV-WF-gWQ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--GOAL OF THE DAY-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GOTD" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M30-lu-Zra"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZBn-40-cfk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="smp-bL-qW2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultBackground" translatesAutoresizingMaskIntoConstraints="NO" id="WMH-Ln-3M2">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ES-Cr-lnY">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <state key="normal" title="GIFT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WMH-Ln-3M2" firstAttribute="width" secondItem="smp-bL-qW2" secondAttribute="width" id="5Zu-Oh-NZo"/>
+                            <constraint firstItem="6ES-Cr-lnY" firstAttribute="centerX" secondItem="smp-bL-qW2" secondAttribute="centerX" id="QZz-Jl-wMf"/>
+                            <constraint firstItem="WMH-Ln-3M2" firstAttribute="centerY" secondItem="smp-bL-qW2" secondAttribute="centerY" id="Raz-GV-wmD"/>
+                            <constraint firstItem="WMH-Ln-3M2" firstAttribute="height" secondItem="smp-bL-qW2" secondAttribute="height" id="lAM-rd-N9X"/>
+                            <constraint firstItem="WMH-Ln-3M2" firstAttribute="centerX" secondItem="smp-bL-qW2" secondAttribute="centerX" id="smS-RD-PdN"/>
+                            <constraint firstItem="6ES-Cr-lnY" firstAttribute="centerY" secondItem="smp-bL-qW2" secondAttribute="centerY" id="wC6-V9-Qvr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="GOAL OF THE DAY" id="XlC-vz-nPZ">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="ulQ-SU-WP0"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="MNx-Y5-1yl"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="733" y="-218"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="b8G-CK-L92">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gmV-WF-gWQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4ur-JL-vwA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="8Tc-L2-elw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CRg-ws-SUx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="203" y="62"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DefaultBackground" width="960" height="540"/>
+    </resources>
+</document>
