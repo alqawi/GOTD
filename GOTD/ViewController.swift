@@ -7,11 +7,17 @@
 //
 
 import UIKit
+import Spring
 
 class ViewController: UIViewController {
 
+    @IBOutlet var openMessageBtn: SpringButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.openMessageBtn.animation = "zoomIn"
+        self.openMessageBtn.animate()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
