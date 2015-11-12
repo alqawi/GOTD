@@ -10,8 +10,20 @@ import UIKit
 import Spring
 
 class ViewController: UIViewController {
+    @IBOutlet weak var visualEffectView: UIVisualEffectView!
 
     @IBOutlet var openMessageBtn: SpringButton!
+    
+    @IBAction func onTapOpen(sender: SpringButton) {
+        UIView.animateWithDuration(1) { () -> Void in
+            sender.alpha = 0
+            self.visualEffectView.alpha = 0
+            
+            
+        }
+        
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

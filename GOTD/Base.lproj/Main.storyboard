@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gmV-WF-gWQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gmV-WF-gWQ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
@@ -37,6 +37,9 @@
                                 <state key="normal" image="Gift">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onTapOpen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="36z-fS-0op"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -47,8 +50,8 @@
                             <constraint firstItem="TvB-TX-Uib" firstAttribute="height" secondItem="smp-bL-qW2" secondAttribute="height" id="Ovh-8b-SnB"/>
                             <constraint firstItem="TvB-TX-Uib" firstAttribute="width" secondItem="smp-bL-qW2" secondAttribute="width" id="ROp-JS-xNi"/>
                             <constraint firstItem="WMH-Ln-3M2" firstAttribute="centerY" secondItem="smp-bL-qW2" secondAttribute="centerY" id="Raz-GV-wmD"/>
-                            <constraint firstItem="6ES-Cr-lnY" firstAttribute="centerX" secondItem="smp-bL-qW2" secondAttribute="centerX" id="ZUQ-RN-zKx"/>
-                            <constraint firstItem="6ES-Cr-lnY" firstAttribute="centerY" secondItem="smp-bL-qW2" secondAttribute="centerY" id="gfq-mN-8Dd"/>
+                            <constraint firstItem="6ES-Cr-lnY" firstAttribute="centerX" secondItem="smp-bL-qW2" secondAttribute="centerX" id="ReZ-S4-e79"/>
+                            <constraint firstItem="6ES-Cr-lnY" firstAttribute="centerY" secondItem="smp-bL-qW2" secondAttribute="centerY" id="W7N-gU-OOg"/>
                             <constraint firstItem="WMH-Ln-3M2" firstAttribute="height" secondItem="smp-bL-qW2" secondAttribute="height" id="lAM-rd-N9X"/>
                             <constraint firstItem="TvB-TX-Uib" firstAttribute="centerY" secondItem="smp-bL-qW2" secondAttribute="centerY" id="nAB-th-H56"/>
                             <constraint firstItem="WMH-Ln-3M2" firstAttribute="centerX" secondItem="smp-bL-qW2" secondAttribute="centerX" id="smS-RD-PdN"/>
@@ -60,11 +63,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="openMessageBtn" destination="6ES-Cr-lnY" id="0Av-YE-HpU"/>
+                        <outlet property="visualEffectView" destination="TvB-TX-Uib" id="5IL-6I-Tzr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="853" y="62"/>
+            <point key="canvasLocation" x="581" y="-34"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="b8G-CK-L92">
@@ -83,7 +87,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CRg-ws-SUx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="203" y="62"/>
+            <point key="canvasLocation" x="-97" y="52"/>
         </scene>
     </scenes>
     <resources>
